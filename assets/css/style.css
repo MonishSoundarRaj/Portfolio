@@ -1092,6 +1092,36 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 450px) {
+.publications-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .publications-list li a{
+    display: inline;
+    color: #87CEEB;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  
+  .awards { margin-bottom: 20px; }
+  
+  .awards-title { margin-bottom: 20px; }
+  
+  .awards-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
 
   /**
    * client
@@ -1119,6 +1149,36 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * CUSTOM PROPERTY
    */
+	  .publications-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .publications-list li a{
+    display: inline;
+    color: #87CEEB;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  
+  .awards { margin-bottom: 20px; }
+  
+  .awards-title { margin-bottom: 20px; }
+  
+  .awards-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
 
   :root {
 
@@ -1406,6 +1466,36 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * REUSED STYLE
    */
+	  .publications-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .publications-list li a{
+    display: inline;
+    color: #87CEEB;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  
+  .awards { margin-bottom: 20px; }
+  
+  .awards-title { margin-bottom: 20px; }
+  
+  .awards-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
 
   .sidebar, article { width: 700px; }
 
@@ -1527,6 +1617,37 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 1024px) {
 
+	  .publications-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .publications-list li a{
+    display: inline;
+    color: #87CEEB;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  
+  .awards { margin-bottom: 20px; }
+  
+  .awards-title { margin-bottom: 20px; }
+  
+  .awards-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+
 
   :root {
 
@@ -1584,7 +1705,36 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 @media (min-width: 1250px) {
-
+  .publications-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  .publications-list li a{
+    display: inline;
+    color: #87CEEB;
+    text-decoration: underline;
+    font-style: italic;
+  }
+  
+  .awards { margin-bottom: 20px; }
+  
+  .awards-title { margin-bottom: 20px; }
+  
+  .awards-list li{
+    list-style: square;
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-300);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
   /**
    * RESET
    */
