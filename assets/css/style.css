@@ -2407,7 +2407,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 12px 24px;
     font-size: var(--fs-7);
   }
-  
+
   .cv-button ion-icon {
     font-size: 18px;
   }
