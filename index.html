@@ -1191,6 +1191,17 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <elevenlabs-convai agent-id="AcJdBEUWdtoGAqkwRgoB"></elevenlabs-convai><script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+    <elevenlabs-convai agent-id="AcJdBEUWdtoGAqkwRgoB" id="ai-widget"></elevenlabs-convai>
+<script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+
+<style>
+  /* Hide the AI widget when screen size is below 1024px */
+  @media screen and (max-width: 1024px) {
+    #ai-widget {
+      display: none;
+    }
+  }
+</style>
+
   </body>
 </html>
