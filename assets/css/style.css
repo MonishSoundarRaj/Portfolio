@@ -1200,7 +1200,6 @@ Publications
   overflow: hidden;
   margin-bottom: 15px;
 } */
-
 /* .project-img img {
   width: 100%; 
   height: 200px; 
@@ -2108,19 +2107,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-left: 20px;
 }
 
-/* Add this after your existing skills section styles */
-
 .skills-section {
   background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
   border-radius: 20px;
-  padding: 30px;
+  padding: 35px;
   box-shadow: var(--shadow-2);
   margin-top: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 .skills-title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
   padding-bottom: 7px;
 }
@@ -2138,42 +2136,64 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .skills-scroll-container {
   position: relative;
-  width: 100%;
-  height: 80px;
+  width: calc(100% + 70px);
+  margin-left: -35px;
+  margin-right: -35px;
+  height: 100px;
   overflow: hidden;
-  background: var(--bg-gradient-jet);
-  border: 1px solid var(--jet);
-  border-radius: 16px;
   padding: 20px 0;
-  margin: 15px 0;
-  box-shadow: var(--shadow-1);
+  margin-bottom: 25px;
+}
+
+.skills-scroll-container::before,
+.skills-scroll-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.skills-scroll-container::before {
+  left: 0;
+  background: linear-gradient(to right, var(--eerie-black-2), transparent);
+}
+
+.skills-scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, var(--eerie-black-2), transparent);
 }
 
 .skills-scroll {
   display: flex;
-  gap: 40px;
+  gap: 70px;
   position: absolute;
   white-space: nowrap;
-  animation: scroll 30s linear infinite;
-  padding: 0 20px;
+  animation: scroll 35s linear infinite;
+  padding: 0 35px;
 }
 
 .skills-scroll.reverse {
-  animation: scroll-reverse 30s linear infinite;
+  animation: scroll-reverse 35s linear infinite;
 }
 
 .skill-icon {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
-  filter: grayscale(100%) brightness(200%);
-  transition: all 0.3s ease;
+  filter: brightness(100%); /* Always colorful */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
+  opacity: 1;
+  /* Add constant glow effect */
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
 }
 
 .skill-icon:hover {
-  filter: grayscale(0%) brightness(100%);
-  transform: scale(1.2);
+  transform: scale(1.25) translateY(-5px);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.3));
 }
 
 @keyframes scroll {
@@ -2190,23 +2210,40 @@ textarea.form-input::-webkit-resizer { display: none; }
   animation-play-state: paused;
 }
 
-/* Add responsive adjustments */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.skill-icon {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
 @media (max-width: 768px) {
   .skills-section {
-    padding: 20px;
+    padding: 25px;
   }
   
   .skills-scroll-container {
-    height: 60px;
-    padding: 10px 0;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    margin-right: -25px;
+    height: 80px;
   }
   
   .skill-icon {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
   
   .skills-scroll {
-    gap: 30px;
+    gap: 50px;
+    padding: 0 25px;
+  }
+  
+  .skills-scroll-container::before,
+  .skills-scroll-container::after {
+    width: 100px;
   }
 }
