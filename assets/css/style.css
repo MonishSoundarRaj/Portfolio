@@ -1149,7 +1149,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * CUSTOM PROPERTY
    */
-	  .publications-list li{
+.publications-list li{
     list-style: square;
     color: var(--light-gray);
     font-size: var(--fs-6);
@@ -1466,7 +1466,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * REUSED STYLE
    */
-	  .publications-list li{
+.publications-list li{
     list-style: square;
     color: var(--light-gray);
     font-size: var(--fs-6);
@@ -1617,7 +1617,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 1024px) {
 
-	  .publications-list li{
+.publications-list li{
     list-style: square;
     color: var(--light-gray);
     font-size: var(--fs-6);
