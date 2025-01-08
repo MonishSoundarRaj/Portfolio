@@ -838,13 +838,13 @@ Publications
   background: var(--eerie-black-2);
   border-radius: 12px;
   margin-bottom: 25px;
-  box-shadow: var(--shadow-2);
+  box-shadow: var(--shadow-1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .timeline-item:hover {
   transform: translateX(5px);
-  box-shadow: var(--shadow-3);
+  box-shadow: var(--shadow-2);
 }
 
 /* Add line connecting timeline items */
@@ -868,7 +868,7 @@ Publications
   width: 14px;
   background: var(--orange-yellow-crayola);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--eerie-black-2);
+  box-shadow: 0 0 0 2px var(--eerie-black-2);
 }
 
 .timeline-item:last-child::before {
@@ -2407,7 +2407,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 12px 24px;
     font-size: var(--fs-7);
   }
-
+  
   .cv-button ion-icon {
     font-size: 18px;
   }
