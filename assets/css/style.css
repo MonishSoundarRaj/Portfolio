@@ -1,13 +1,24 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+
 /**
- * Copyright 2022 @codewithsadee
- * Transformed by Monish, 2024
+ * copyright 2022 @codewithsadee, Transformed by Monish 2024
  */
 
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
 .avatar-box img{
   border-radius: 50%;
 }
 
 :root {
+  /**
+   * colors
+   */
+  /* gradient */
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
@@ -96,6 +107,14 @@
 
 }
 
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -133,6 +152,10 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
 
 .sidebar,
 article {
@@ -225,8 +248,8 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; 
-  height: 5px; 
+  width: 5px; /* for vertical scrollbar */
+  height: 5px; /* for horizontal scrollbar */
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -261,11 +284,27 @@ article.active {
   z-index: -1;
 }
 
+
+
+
+
+/*-----------------------------------*\
+  #MAIN
+\*-----------------------------------*/
+
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
 }
+
+
+
+
+
+/*-----------------------------------*\
+  #SIDEBAR
+\*-----------------------------------*/
 
 .sidebar {
   margin-bottom: 20px;
@@ -396,7 +435,16 @@ main {
   font-size: 18px;
 }
 
+
 .social-item .social-link:hover { color: var(--light-gray); }
+
+
+
+
+
+/*-----------------------------------*\
+  #NAVBAR
+\*-----------------------------------*/
 
 .navbar {
   position: fixed;
@@ -431,6 +479,14 @@ main {
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
+
+
+
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
@@ -441,6 +497,12 @@ main {
 }
 
 .about-text p { margin-bottom: 15px; }
+
+
+
+/**
+ * #service 
+ */
 
 .service { margin-bottom: 35px; }
 
@@ -484,8 +546,48 @@ main {
   font-weight: var(--fw-3);
   line-height: 1.6;
 }
+/* news */
+.news { margin-bottom: 20px; }
 
+.news-title { margin-bottom: 20px; }
+/* 
+Publications
+*/
 
+.publications { margin-bottom: 20px; }
+
+.publications-title { margin-bottom: 20px; }
+
+.publications-list li{
+  list-style: square;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.publications-list li a{
+  display: inline;
+  color: #87CEEB;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.awards { margin-bottom: 20px; }
+
+.awards-title { margin-bottom: 20px; }
+
+.awards-list li{
+  list-style: square;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
 /* .hr-about{
   margin: 10px 0;
   border: 1px solid var(--jet);
@@ -1092,36 +1194,6 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 450px) {
-.publications-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
-  
-  .publications-list li a{
-    display: inline;
-    color: #87CEEB;
-    text-decoration: underline;
-    font-style: italic;
-  }
-  
-  .awards { margin-bottom: 20px; }
-  
-  .awards-title { margin-bottom: 20px; }
-  
-  .awards-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
 
   /**
    * client
@@ -1149,36 +1221,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * CUSTOM PROPERTY
    */
-.publications-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
-  
-  .publications-list li a{
-    display: inline;
-    color: #87CEEB;
-    text-decoration: underline;
-    font-style: italic;
-  }
-  
-  .awards { margin-bottom: 20px; }
-  
-  .awards-title { margin-bottom: 20px; }
-  
-  .awards-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
 
   :root {
 
@@ -1466,36 +1508,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * REUSED STYLE
    */
-.publications-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
-  
-  .publications-list li a{
-    display: inline;
-    color: #87CEEB;
-    text-decoration: underline;
-    font-style: italic;
-  }
-  
-  .awards { margin-bottom: 20px; }
-  
-  .awards-title { margin-bottom: 20px; }
-  
-  .awards-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
 
   .sidebar, article { width: 700px; }
 
@@ -1563,48 +1575,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 
+  /* portfolio and blog grid */
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
-  .news { margin-bottom: 20px; }
 
-  .news-title { margin-bottom: 20px; }
-  
-  .publications { margin-bottom: 20px; }
-  
-  .publications-title { margin-bottom: 20px; }
-  
-  .publications-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
-  
-  .publications-list li a{
-    display: inline;
-    color: #87CEEB;
-    text-decoration: underline;
-    font-style: italic;
-  }
-  
-  .awards { margin-bottom: 20px; }
-  
-  .awards-title { margin-bottom: 20px; }
-  
-  .awards-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
 
+  /**
+   * CONTACT
+   */
 
   .input-wrapper { grid-template-columns: 1fr 1fr; }
 
@@ -1615,41 +1594,25 @@ textarea.form-input::-webkit-resizer { display: none; }
   
 }
 
+
+
+
+
+/**
+ * responsive larger than 1024px screen
+ */
+
 @media (min-width: 1024px) {
 
-.publications-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
-  
-  .publications-list li a{
-    display: inline;
-    color: #87CEEB;
-    text-decoration: underline;
-    font-style: italic;
-  }
-  
-  .awards { margin-bottom: 20px; }
-  
-  .awards-title { margin-bottom: 20px; }
-  
-  .awards-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
-
+  /**
+   * CUSTOM PROPERTY
+   */
 
   :root {
+
+    /**
+    * shadow
+    */
 
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
@@ -1657,10 +1620,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
+
+
+  /**
+   * REUSED STYLE
+   */
+
   .sidebar, article {
     width: 950px;
     box-shadow: var(--shadow-5);
   }
+
+
+
+  /**
+   * MAIN 
+   */
 
   main { margin-bottom: 60px; }
 
@@ -1669,6 +1644,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin: auto;
   }
+
+
+
+  /**
+   * NAVBAR
+   */
 
   .navbar {
     position: absolute;
@@ -1689,52 +1670,51 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { font-weight: var(--fw-500); }
 
+
+
+  /**
+   * ABOUT
+   */
+
+  /* service */
+
   .service-list {
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
 
+  /* testimonials */
+
   .testimonials-item { min-width: calc(50% - 15px); }
+
+  /* clients */
 
   .clients-item { min-width: calc(25% - 38px); }
 
+
+
+  /**
+   * PORTFOLIO
+   */
+
   .project-list { grid-template-columns: repeat(3, 1fr); }
+
+
+
+  /**
+   * BLOG
+   */
 
   .blog-banner-box { height: 230px; }
 
 }
 
+/**
+ * responsive larger than 1250px screen
+ */
+
 @media (min-width: 1250px) {
-  .publications-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
-  
-  .publications-list li a{
-    display: inline;
-    color: #87CEEB;
-    text-decoration: underline;
-    font-style: italic;
-  }
-  
-  .awards { margin-bottom: 20px; }
-  
-  .awards-title { margin-bottom: 20px; }
-  
-  .awards-list li{
-    list-style: square;
-    color: var(--light-gray);
-    font-size: var(--fs-6);
-    font-weight: var(--fw-300);
-    line-height: 1.6;
-    margin-bottom: 10px;
-    margin-left: 30px;
-  }
+
   /**
    * RESET
    */
@@ -1755,9 +1735,21 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-button { height: 60px; }
 
+
+
+  /**
+   * REUSED STYLE
+   */
+
   .sidebar, article { width: auto; }
 
   article { min-height: 100%; }
+
+
+
+  /**
+   * MAIN
+   */
 
   main {
     max-width: 1200px;
@@ -1885,10 +1877,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .resume_view_button:hover {
+  /* background: var(--bg-gradient-yellow-1); */
   transform: scale(1.02); 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+
+/* More publication styles */
 
 .publication-link {
   display: inline-block;
