@@ -1254,6 +1254,7 @@ Publications
   height: 100%;
   object-fit: cover;
 }
+.project-item { display: none; }
 
 .project-item.active {
   display: block;
@@ -1339,7 +1340,7 @@ Publications
 .project-item > a:hover img { transform: scale(1.1); }
 
 .project-title,
-.project-category { margin-left: 10px; }
+.project-category { margin-left: 0px; }
 
 .project-title {
   color: var(--white-2);
@@ -1768,10 +1769,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-
-
-
-
 /**
  * responsive larger than 768px screen
  */
@@ -1974,19 +1971,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(25% - 38px); }
 
-
-
-  /**
-   * PORTFOLIO
-   */
-
-  .project-list { grid-template-columns: repeat(3, 1fr); }
-
-
-
-  /**
-   * BLOG
-   */
 
   .blog-banner-box { height: 230px; }
 
@@ -2191,7 +2175,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .skills-title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
   padding-bottom: 7px;
 }
@@ -2214,8 +2198,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-right: -35px;
   height: 80px;
   overflow: hidden;
-  padding: 20px 0;
-  margin-bottom: 25px;
+  padding: 60px 0;
+  margin-bottom: 20px;
 }
 
 .skills-scroll-container::before,
@@ -2244,7 +2228,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   gap: 70px;
   position: absolute;
   white-space: nowrap;
-  animation: scroll 35s linear infinite;
+  animation: scroll 60s linear infinite;
   padding: 0 35px;
 }
 
@@ -2257,7 +2241,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   height: 45px;
   object-fit: contain;
   filter: brightness(100%); 
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1);
   opacity: 1;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.1));
@@ -2401,7 +2385,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   transform: translateX(0);
 }
 
-/* Add responsive adjustments */
 @media (max-width: 768px) {
   .cv-button {
     padding: 12px 24px;
@@ -2412,3 +2395,88 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 18px;
   }
 }
+
+
+.skill-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.skill-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 12px;
+  color: var(--white-2);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.05),
+    inset 0 0 0.5px rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+
+.skill-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.08) transparent transparent transparent;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+.skill-icon-container:hover .skill-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.skill-icon-container:hover .skill-tooltip::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  border-radius: inherit;
+  z-index: -1;
+  animation: shimmer 2s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skill-tooltip {
+  transform-origin: bottom center;
+  transform: translateX(-50%) translateY(10px) scale(0.95);
+}
+
+.skill-icon-container:hover .skill-tooltip {
+  transform: translateX(-50%) translateY(-5px) scale(1);
+}
+
