@@ -552,7 +552,7 @@ Publications
 
 .publications { margin-bottom: 20px; }
 
-.publications-title { margin-bottom: 20px; }
+.publications-title, .posters-title { margin-bottom: 20px; }
 
 .publications-list li{
   list-style: square;
