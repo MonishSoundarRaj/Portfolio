@@ -2294,9 +2294,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 @media (max-width: 580px) {
+  .charlotte-image-container{
+    margin-top: 50px;
+  
+  }
   .charlotte-image {
     width: calc(100% + 20px);
-    margin: -10px -10px -10px -10px; /* Smaller margins for mobile */
+    margin: -10px -10px -10px -10px; 
   }
 }
 
