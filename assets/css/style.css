@@ -2277,7 +2277,82 @@ textarea.form-input::-webkit-resizer { display: none; }
   transform: translateX(-50%) translateY(-5px) scale(1);
 }
 
-.charlotte-image-container{
+.charlotte-image-container {
+  margin-top: 80px;
+}
+
+.charlotte-image {
+  width: 100%; 
+  height: auto;
+  display: block;
+  padding: 0;
+  border-radius: 20px;
+  border: 0;
+  transition: transform 0.3s ease;
+  filter: brightness(0.78) contrast(1.1) saturate(0.8);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(0, 0, 0, 0.6) 15%,
+    rgba(0, 0, 0, 0.8) 30%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 1) 50%
+  );
+  mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(0, 0, 0, 0.6) 15%,
+    rgba(0, 0, 0, 0.8) 30%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 1) 50%
+  );
+}
+
+@media (max-width: 580px) {
+  .charlotte-image-container {
+    margin-top: 50px;
+  }
+  .charlotte-image {
+    width: calc(100% + 20px);
+    margin: -10px -10px -10px -10px; 
+  }
+}
+
+@media (min-width: 1250px) {
+  .charlotte-image {
+    width: calc(100% + 60px);
+    margin: -30px -30px -30px -30px;
+  }
+}
+
+/* .charlotte-image-container{
+margin-top: 80px;
+}
+
+.charlotte-image {
+  width: 100%; 
+  height: auto;
+  display: block;
+  padding: 0;
+  border-radius: 20px;
+  border: 0;
+  transition: transform 0.3s ease;
+  filter: brightness(0.78) contrast(1.1) saturate(0.8);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 1) 50%
+  );
+  mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 1) 50%
+  );
+} */
+
+/* .charlotte-image-container{
   margin-top: 80px;
 
 }
@@ -2291,9 +2366,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   border: 0;
   transition: transform 0.3s ease;
   filter: brightness(0.78) contrast(1.1) saturate(0.8); 
-}
+} */
 
-@media (max-width: 580px) {
+/* @media (max-width: 580px) {
   .charlotte-image-container{
     margin-top: 50px;
   
@@ -2309,7 +2384,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: calc(100% + 60px);
     margin: -30px -30px -30px -30px;
   }
-}
+} */
 
 /* .charlotte-image-container {
   margin-top: 30px;
