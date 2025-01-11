@@ -2413,3 +2413,10 @@ margin-top: 80px;
     margin-top: 25px;
   }
 } */
+
+.signature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
