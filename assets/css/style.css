@@ -2277,3 +2277,59 @@ textarea.form-input::-webkit-resizer { display: none; }
   transform: translateX(-50%) translateY(-5px) scale(1);
 }
 
+.charlotte-image-container{
+  margin-top: 30px;
+}
+
+.charlotte-image {
+  width: 100%; 
+  height: auto;
+  display: block;
+  /* margin: 0 -30px -60px -40px;  */
+  padding: 0;
+  border-radius: 20px;
+  border: 0;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 580px) {
+  .charlotte-image {
+    width: calc(100% + 20px);
+    margin: -10px -10px -10px -10px; /* Smaller margins for mobile */
+  }
+}
+
+@media (min-width: 1250px) {
+  .charlotte-image {
+    width: calc(100% + 60px);
+    margin: -30px -30px -30px -30px;
+  }
+}
+
+/* .charlotte-image-container {
+  margin-top: 30px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+  position: relative;
+  background: var(--bg-gradient-onyx);
+  padding: 2px;
+}
+
+.charlotte-image {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.charlotte-image:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .charlotte-image-container {
+    margin-top: 25px;
+  }
+} */
