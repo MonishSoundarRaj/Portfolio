@@ -23,23 +23,14 @@
     />
     <title>MSR Portfolio</title>
 
-    <!--
-    - favicon
-  -->
     <link
       rel="shortcut icon"
       href="./assets/images/favicon.ico"
       type="image/x-icon"
     />
 
-    <!--
-    - custom css link
-  -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <!--
-    - google font link
-  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -48,15 +39,7 @@
     />
   </head>
   <body>
-    <!--
-    - #MAIN
-  -->
-
     <main>
-      <!--
-      - #SIDEBAR
-    -->
-
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
           <figure class="avatar-box">
@@ -179,15 +162,7 @@
         </div>
       </aside>
 
-      <!--
-      - #main-content
-    -->
-
       <div class="main-content">
-        <!--
-        - #NAVBAR
-      -->
-
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
@@ -202,19 +177,11 @@
               <button class="navbar-link" data-nav-link>Projects</button>
             </li>
 
-            <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
-
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Contact</button>
             </li>
           </ul>
         </nav>
-
-        <!--
-        - #ABOUT
-      -->
 
         <article class="about active" data-page="about">
           <header>
@@ -237,6 +204,10 @@
         <section class="service">
           <h3 class="h3 service-title">News</h3>
           <ul class="new-list" id="new-list">
+            <li>
+              <p><b>[Feb. 2025]</b> 1 Paper - MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection accepted to CVPR 2026,
+                <a class="a-link" href="https://mstemba.github.io">Website.</a></p>
+            </li>
             <li>
               <p><b>[Jan. 2025]</b> Started working as a Teaching Assistant for DATA 120: Ethics of Data Science at UNC Chapel Hill.</p>
             </li>
@@ -435,32 +406,36 @@
           });
         </script>
 
-          <!-- publications -->
-          <section class="publications">
-            <h3 class="h3 publications-title">Preprint 2025</h3>
+        <section class="publications">
+            <h3 class="h3 publications-title">Peer Reviewed Selected Publications</h3>
             <ul class="publications-list">
               <li>
                 <p>
                   <strong>MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection</strong><br />
                   <span class="publication-detail">
                     Arkaprava Sinha, <strong>Monish Soundar Raj</strong>, Pu Wang, Ahmed Helmy, Srijan Das<br />
-                                    <span class="more-info-highlight">
-                  📄 More details coming soon <br />
-                </span>
+                    Published at <strong>CVPR 2026</strong>.<br />
                   </span>
                   <div class="button-group">
                     <a href="https://arxiv.org/pdf/2501.06138" class="custom-button">View Paper</a>
+                    <a href="https://github.com/thearkaprava/MS-Temba" class="custom-button">Project / GitHub</a>
                   </div>
                 </p>
               </li>
-              </ul>
-        </section>
-
-
-        <section class="publications">
-            <h3 class="h3 publications-title">Peer Reviewed Selected Publications</h3>
-            <ul class="publications-list">
-            <li>
+              <li>
+                <p>
+                  <strong>AI-Assisted Rapid Crystal Structure Generation Towards a Target Local Environment</strong><br />
+                  <span class="publication-detail">
+                    Osman Goni Ridwan, Sylvain Pitié, <strong>Monish Soundar Raj</strong>, <strong><a href="https://daidong.github.io/" class="a-link">Dong Dai</a></strong>, Gilles Frapper, Hongfei Xue, Qiang Zhu<br />
+                    Published at <strong>npj Computational Materials</strong>, 2026.<br />
+                  </span>
+                  <div class="button-group">
+                    <a href="https://www.nature.com/articles/s41524-025-01931-9" class="custom-button">View Paper</a>
+                  </div>
+                </p>
+              </li>
+              
+              <li>
                 <p>
                     <strong>An Empirical Study of Machine Learning-based Synthetic Job Trace Generation Methods.</strong><br />
                     <span class="publication-detail">
@@ -472,8 +447,8 @@
                         <a href="https://github.com/DIR-LAB/Gen-Parallel-Workloads" class="custom-button">GitHub Repository</a>
                     </div>
                 </p>
-            </li>
-            <li>
+              </li>
+              <li>
                 <p>
                     <strong>Cross-System Analysis of Job Characterization and Scheduling in Large-Scale Computing Clusters.</strong><br />
                     <span class="publication-detail">
@@ -489,8 +464,7 @@
                         <a href="https://github.com/DIR-LAB/lumos" class="custom-button">GitHub Repository</a>
                     </div>
                 </p>
-            </li>
-            
+              </li> 
             </ul>
         </section>
 
@@ -525,7 +499,6 @@
           </ul>
         </section>
 
-        <!-- New Mentoring Activities section -->
         <section class="mentoring">
           <h3 class="h3 mentoring-title">Mentoring Activities</h3>
           <ul class="publications-list">
@@ -549,7 +522,6 @@
         
           <section class="awards">
             <h3 class="h3 awards-title">Awards</h3>
-            <!-- <hr class="hr-about"> -->
             <ul class="awards-list">
               <li>
                 <p>
@@ -574,16 +546,12 @@
             </ul>
           </section>
 
-          <!-- <div class="charlotte-image-container">
-            <img src="/assets/images/file.png" alt="Charlotte" class="charlotte-image"/>
-          </div> -->
           <div class="charlotte-image-container">
             
             <img src="/assets/images/file.png" alt="Charlotte" class="charlotte-image"/>
           </div>
 
-<!-- Don't remove this. -->
-          <div class="modal-container" data-modal-container>
+<div class="modal-container" data-modal-container>
             <div class="overlay" data-overlay></div>
             <section class="testimonials-modal">
               <button class="modal-close-btn" data-modal-close-btn>
@@ -592,10 +560,6 @@
           </div>
 
         </article>
-
-        <!--
-        - #RESUME
-      -->
 
         <article class="resume" data-page="resume">
           <header>
@@ -611,7 +575,6 @@
             </div>
 
             <ol class="timeline-list">
-              <!-- ML Lab Research Assistant -->
               <li class="timeline-item">
                               <h4 class="h4 timeline-item-title">
                 Teaching Assistant - DATA 120: Ethics of Data Science and AI
@@ -652,7 +615,6 @@
               </div>
               </li>
 
-              <!-- HPC Lab Research Assistant -->
               <li class="timeline-item">
                               <h4 class="h4 timeline-item-title">
                 Research Assistant - High Performance Computing and Systems Lab
@@ -668,7 +630,6 @@
                 </div>
               </li>
 
-              <!-- Summer Research Scholar -->
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
                   Summer Research Scholar - UNC Charlotte
@@ -683,7 +644,6 @@
                 </div>
               </li>
 
-              <!-- Web Developer HPC Lab -->
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
                   Web Developer - High Performance Computing and Systems Lab
@@ -714,7 +674,6 @@
                 </div>
               </li>
 
-              <!-- Front-End Developer Intern -->
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
                   Front-End Developer Intern - CronMarket
@@ -1197,10 +1156,7 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
       </div>
     </li>
 
-    <!-- Simplistic Projects -->
-    
-
-  <li class="project-item active" data-filter-item data-category="Simplistic Projects">
+    <li class="project-item active" data-filter-item data-category="Simplistic Projects">
     <figure class="project-img">
       <img src="./assets/images/youtubeclone-project.png" alt="YouTube Clone" loading="lazy" />
     </figure>
@@ -1210,7 +1166,7 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
       <p class="project-category">Video Platform Clone</p>
       
       <p class="project-description">
-        A functioning YouTube clone. Built using React. This web application uses YouTube's public API to fetch the data. Search bar and video player has been implemented. 
+        A functioning YouTube clone. Built using React. This web application uses YouTube's public API to fetch the data. Search bar and video player has been implemented. 
       </p>
 
       <div class="project-tech">
@@ -1220,10 +1176,6 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
       </div>
 
       <div class="project-buttons">
-        <!-- <a href="#" class="project-btn">
-          <ion-icon name="logo-github"></ion-icon>
-          Code
-        </a> -->
         <a href="https://youtube-hooks-iota-inky.vercel.app/" class="project-btn">
           <ion-icon name="open-outline"></ion-icon>
           View
@@ -1254,17 +1206,7 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
         <span class="tech-tag">Auth0</span>
       </div>
 
-      <!-- <div class="project-buttons">
-        <a href="#" class="project-btn">
-          <ion-icon name="logo-github"></ion-icon>
-          Code
-        </a>
-         <a href="#" class="project-btn">
-          <ion-icon name="open-outline"></ion-icon>
-          Visit Blog
-        </a> 
-      </div> -->
-    </div>
+      </div>
   </li>
 
   <li class="project-item active" data-filter-item data-category="Simplistic Projects">
@@ -1326,11 +1268,7 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
           <ion-icon name="logo-github"></ion-icon>
           Code
         </a>
-        <!-- <a href="#" class="project-btn">
-          <ion-icon name="open-outline"></ion-icon>
-          Try It
-        </a> -->
-      </div>
+        </div>
     </div>
   </li>
 
@@ -1354,17 +1292,7 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
         <span class="tech-tag">Axios</span>
       </div>
 
-      <!-- <div class="project-buttons">
-        <a href="#" class="project-btn">
-          <ion-icon name="logo-github"></ion-icon>
-          Code
-        </a>
-         <a href="#" class="project-btn">
-          <ion-icon name="open-outline"></ion-icon>
-          View
-        </a>
-      </div> -->
-    </div>
+      </div>
   </li>
 
   <li class="project-item active" data-filter-item data-category="Simplistic Projects">
@@ -1388,17 +1316,7 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
 
       </div>
 
-      <!-- <div class="project-buttons">
-        <a href="#" class="project-btn">
-          <ion-icon name="logo-github"></ion-icon>
-          Code
-        </a>
-        <a href="#" class="project-btn">
-          <ion-icon name="open-outline"></ion-icon>
-          Visit Site
-        </a> 
-      </div> -->
-    </div>
+      </div>
   </li>
 
 
@@ -1438,10 +1356,6 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
   </ul>
           </section>
         </article>
-
-        <!--
-        - #CONTACT
-      -->
 
         <article class="contact" data-page="contact">
           <header>
@@ -1507,7 +1421,6 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
 
         
 
-        <!-- Don't remove this. -->
         <div class="modal-container" data-modal-container>
           <div class="overlay" data-overlay></div>
           <section class="testimonials-modal">
@@ -1519,14 +1432,8 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
       </div>
     </main>
 
-    <!--
-    - custom js link
-  -->
     <script src="./assets/js/script.js"></script>
 
-    <!--
-    - ionicon link
-  -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -1537,15 +1444,6 @@ A full stack eCommerce shoe store. Search, cart, checkout, and products display 
     ></script>
     <elevenlabs-convai agent-id="AcJdBEUWdtoGAqkwRgoB" id="ai-widget"></elevenlabs-convai>
 <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
-
-<!-- <div class="signature-container">
-  <img src="/assets/images/sign.gif" alt="signature">
-</div> -->
-
-
-<!-- <div class="signature-container">
-  <img src="/assets/images/winter.gif" alt="signature">
-</div> -->
 
 <style>
   ._box_4hrb0_36 {
