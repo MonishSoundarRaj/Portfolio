@@ -936,6 +936,39 @@ Publications
   white-space: nowrap;
 }
 
+.pub-venue {
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-500);
+}
+
+.project-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: -6px 0 14px;
+}
+
+.gh-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--onyx);
+  color: var(--light-gray);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: var(--fs-8);
+  transition: color 0.3s ease;
+}
+
+.gh-stat ion-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 13px;
+}
+
+a.gh-stat:hover {
+  color: var(--orange-yellow-crayola);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .project-list {

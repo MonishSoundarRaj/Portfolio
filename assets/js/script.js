@@ -105,6 +105,22 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+const githubStatBoxes = document.querySelectorAll("[data-github-repo]");
+
+for (let i = 0; i < githubStatBoxes.length; i++) {
+  const box = githubStatBoxes[i];
+  fetch("https://api.github.com/repos/" + box.dataset.githubRepo)
+    .then(function (res) { return res.ok ? res.json() : null; })
+    .then(function (repo) {
+      if (!repo) return;
+      const stars = box.querySelector("[data-gh-stars]");
+      const forks = box.querySelector("[data-gh-forks]");
+      if (stars) stars.innerText = repo.stargazers_count;
+      if (forks) forks.innerText = repo.forks_count;
+    })
+    .catch(function () {});
+}
+
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
