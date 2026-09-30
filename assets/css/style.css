@@ -489,10 +489,12 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
-  line-height: 1.8;
+  line-height: 1.95;
 }
 
-.about-text p { margin-bottom: 15px; }
+.about-text p { margin-bottom: 26px; }
+
+.about-text p:last-child { margin-bottom: 0; }
 
 
 
