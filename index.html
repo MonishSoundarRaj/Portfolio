@@ -174,6 +174,10 @@
             </li>
 
             <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Research</button>
+            </li>
+
+            <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Side Projects</button>
             </li>
 
@@ -906,6 +910,291 @@
           
         </article>
 
+        <article class="research" data-page="research">
+          <header>
+            <h2 class="h2 article-title">Research</h2>
+          </header>
+
+          <section class="research-papers">
+            <div class="scholar-strip">
+              <div class="scholar-stat">
+                <strong data-scholar="citations">27</strong>
+                <span>Citations</span>
+              </div>
+              <div class="scholar-stat">
+                <strong data-scholar="h-index">4</strong>
+                <span>h-index</span>
+              </div>
+              <div class="scholar-stat">
+                <strong>4</strong>
+                <span>Peer reviewed papers</span>
+              </div>
+              <a href="https://scholar.google.com/citations?user=u6Y0pW4AAAAJ&amp;hl=en" class="scholar-link" target="_blank" rel="noopener">
+                <ion-icon name="school-outline"></ion-icon>
+                Google Scholar
+              </a>
+              <span class="scholar-note">Counts from Google Scholar, <span data-scholar="updated">Oct 2026</span></span>
+            </div>
+
+  <ul class="project-list paper-list">
+    <li class="project-item paper-item active">
+      <figure class="project-img">
+        <img src="./assets/images/paper-mstemba.png" alt="MS-Temba figure: a 40 minute activities of daily living video with short and long overlapping actions, and MS-Temba beating transformer models with far fewer parameters" loading="lazy" />
+      </figure>
+
+      <div class="project-content">
+        <p class="paper-venue">
+          <span class="venue-tag">CVPR 2026</span>
+          <span class="paper-kind">Conference paper</span>
+        </p>
+        <h3 class="project-title">MS-Temba: Multi-Scale Temporal Mamba for Understanding Long Untrimmed Videos</h3>
+        <p class="paper-authors">Arkaprava Sinha, <strong>Monish Soundar Raj</strong>, Pu Wang, Ahmed Helmy, Hieu Le, Srijan Das</p>
+
+        <div class="project-stats">
+          <a href="https://scholar.google.com/citations?user=u6Y0pW4AAAAJ&amp;hl=en" class="gh-stat cite-stat" title="Google Scholar citations, arXiv and CVPR entries combined" target="_blank" rel="noopener">
+            <ion-icon name="school"></ion-icon>
+            <span data-citations="u6Y0pW4AAAAJ:2osOgNQ5qMEC u6Y0pW4AAAAJ:zYLM7Y9cAGgC">17</span>&nbsp;citations
+          </a>
+          <span class="gh-stat">
+            <ion-icon name="calendar-outline"></ion-icon>
+            2026
+          </span>
+        </div>
+
+        <p class="project-description">
+          Temporal action detection in long, untrimmed videos of daily living, where a 40 minute recording mixes short actions like drinking from a cup with long ones like using a laptop, and many of them overlap. MS-Temba extends Mamba with dilated temporal state space blocks that read the video at several time scales and a scale-aware fuser that merges them. It reaches state of the art on the ADL benchmarks with about 5x fewer parameters than transformer models.
+        </p>
+        <p class="paper-role"><strong>My part:</strong> second author. I built the CLIP feature extraction pipeline (12,000+ videos, 16M+ frames) and tuned the baselines, lifting accuracy on Toyota Smarthome by 24%.</p>
+
+        <div class="project-tech">
+          <span class="tech-tag">Mamba</span>
+          <span class="tech-tag">State Space Models</span>
+          <span class="tech-tag">Temporal Action Detection</span>
+          <span class="tech-tag">Video Understanding</span>
+          <span class="tech-tag">PyTorch</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://arxiv.org/pdf/2501.06138" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="document-text-outline"></ion-icon>
+            Paper
+          </a>
+          <a href="https://github.com/thearkaprava/MS-Temba" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="logo-github"></ion-icon>
+            Code
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="project-item paper-item active">
+      <figure class="project-img">
+        <img src="./assets/images/paper-npj.png" alt="LEGO-xtal figure: symmetry subgroup augmentation of a crystal structure and pre-relaxation with an SO(3) local environment descriptor" loading="lazy" />
+      </figure>
+
+      <div class="project-content">
+        <p class="paper-venue">
+          <span class="venue-tag">npj Computational Materials 2026</span>
+          <span class="paper-kind">Journal article</span>
+        </p>
+        <h3 class="project-title">AI-Assisted Rapid Crystal Structure Generation Towards a Target Local Environment</h3>
+        <p class="paper-authors">Osman Goni Ridwan, Sylvain Pitié, <strong>Monish Soundar Raj</strong>, Dong Dai, Gilles Frapper, Hongfei Xue, Qiang Zhu</p>
+
+        <div class="project-stats">
+          <a href="https://scholar.google.com/scholar?oi=bibs&amp;hl=en&amp;cites=17198954168042880835" class="gh-stat cite-stat" title="Citations on Google Scholar" target="_blank" rel="noopener">
+            <ion-icon name="school"></ion-icon>
+            <span data-citations="u6Y0pW4AAAAJ:qjMakFHDy7sC">4</span>&nbsp;citations
+          </a>
+          <span class="gh-stat">
+            <ion-icon name="calendar-outline"></ion-icon>
+            2026
+          </span>
+        </div>
+
+        <p class="project-description">
+          Crystal structure prediction usually means expensive energy minimization over thousands of candidates, and AI generators have only handled a few tens of atoms per cell. LEGO-xtal is a symmetry-informed generator: it trains on a subgroup-augmented dataset, proposes structures, then relaxes them against local geometry descriptors instead of energy. Starting from 25 known low-energy sp2 carbon allotropes it found over 1,700, all within 0.5 eV/atom of graphite.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">Generative Models</span>
+          <span class="tech-tag">Crystal Structure Prediction</span>
+          <span class="tech-tag">Space Group Symmetry</span>
+          <span class="tech-tag">Materials Science</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://www.nature.com/articles/s41524-025-01931-9" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="document-text-outline"></ion-icon>
+            Paper
+          </a>
+          <a href="https://arxiv.org/abs/2506.08224" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="open-outline"></ion-icon>
+            arXiv
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="project-item paper-item active">
+      <figure class="project-img">
+        <img src="./assets/images/paper-afdp.png" alt="AFDP system architecture: browser layer, pruning engine, LLM reasoning, loop detector, and adaptive feedback loop" loading="lazy" />
+      </figure>
+
+      <div class="project-content">
+        <p class="paper-venue">
+          <span class="venue-tag">COMP 790 · UNC Chapel Hill</span>
+          <span class="paper-kind">Course research paper, 2026</span>
+        </p>
+        <h3 class="project-title">Loop Detection with Reflection Prompts as the Primary Driver of Web Agent Performance: An Ablation Study on Adaptive Feedback-Driven DOM Pruning</h3>
+        <p class="paper-authors"><strong>Monish Soundar Raj</strong>, Jefrey Bergl, Rishabhdev Potti</p>
+
+        <div class="project-stats">
+          <span class="gh-stat">
+            <ion-icon name="people-outline"></ion-icon>
+            Led a team of three
+          </span>
+          <span class="gh-stat">
+            <ion-icon name="calendar-outline"></ion-icon>
+            2026
+          </span>
+        </div>
+
+        <p class="project-description">
+          LLM web agents choke on page observations of 10,000 to 100,000 tokens. AFDP pairs adaptive DOM pruning with a loop detector that injects a reflection prompt the moment the agent starts repeating itself. A four-condition ablation on 168 WebArena-Verified Hard tasks found that loop recovery, not pruning, drives the gains: 14.9 points more task success, while conservative pruning cut observation tokens by 52% with no change in success.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Playwright</span>
+          <span class="tech-tag">Azure OpenAI</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">WebArena</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="./assets/papers/AFDP-COMP790-2026.pdf" class="project-btn" target="_blank">
+            <ion-icon name="document-text-outline"></ion-icon>
+            Read Paper
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="project-item paper-item active">
+      <figure class="project-img">
+        <img src="./assets/images/paper-ipdps.png" alt="Job runtime, arrival interval, and resource allocation distributions across the Blue Waters, Mira, Theta, Philly, and Helios clusters" loading="lazy" />
+      </figure>
+
+      <div class="project-content">
+        <p class="paper-venue">
+          <span class="venue-tag">IEEE IPDPS 2024</span>
+          <span class="paper-kind">Conference paper</span>
+        </p>
+        <h3 class="project-title">Cross-System Analysis of Job Characterization and Scheduling in Large-Scale Computing Clusters</h3>
+        <p class="paper-authors">Di Zhang, <strong>Monish Soundar Raj</strong>, Bing Xie, Sheng Di, Dong Dai</p>
+
+        <div class="project-stats">
+          <a href="https://scholar.google.com/scholar?oi=bibs&amp;hl=en&amp;cites=3540692626446505493" class="gh-stat cite-stat" title="Citations on Google Scholar" target="_blank" rel="noopener">
+            <ion-icon name="school"></ion-icon>
+            <span data-citations="u6Y0pW4AAAAJ:u5HHmVD_uO8C">6</span>&nbsp;citations
+          </a>
+          <span class="gh-stat">
+            <ion-icon name="calendar-outline"></ion-icon>
+            2024
+          </span>
+        </div>
+
+        <p class="project-description">
+          HPC clusters now run deep learning jobs next to classic simulations, and the old assumptions about their workloads no longer hold. We compared job traces across five systems, Mira and Theta (classic HPC), Philly and Helios (deep learning), and Blue Waters (hybrid), looking at job geometry, arrival patterns, resource allocation, and what each means for scheduling. Joint work with Microsoft and Argonne National Laboratory.
+        </p>
+        <p class="paper-role"><strong>My part:</strong> second author. I analyzed the job traces across the clusters for the scheduling study.</p>
+
+        <div class="project-tech">
+          <span class="tech-tag">HPC</span>
+          <span class="tech-tag">Job Scheduling</span>
+          <span class="tech-tag">Workload Characterization</span>
+          <span class="tech-tag">Deep Learning Clusters</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://drive.google.com/file/d/12-7PToUaraiZ4J1UPTlPLWlJxhe6dezU/view" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="document-text-outline"></ion-icon>
+            Paper
+          </a>
+          <a href="https://lumos-job-traces.streamlit.app/" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="open-outline"></ion-icon>
+            Demo
+          </a>
+          <a href="https://github.com/DIR-LAB/lumos" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="logo-github"></ion-icon>
+            Code
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="project-item paper-item active">
+      <figure class="project-img">
+        <img src="./assets/images/paper-jsspp.png" alt="Cumulative distribution plots comparing real and synthetic job traces from five generative models across four clusters" loading="lazy" />
+      </figure>
+
+      <div class="project-content">
+        <p class="paper-venue">
+          <span class="venue-tag">JSSPP 2024 · Springer LNCS</span>
+          <span class="paper-kind">Workshop paper, IPDPS 2024</span>
+        </p>
+        <h3 class="project-title">An Empirical Study of Machine Learning-Based Synthetic Job Trace Generation Methods</h3>
+        <p class="paper-authors"><strong>Monish Soundar Raj</strong>, Thomas MacDougall, Di Zhang, Dong Dai</p>
+
+        <div class="project-stats">
+          <a href="https://scholar.google.com/citations?user=u6Y0pW4AAAAJ&amp;hl=en" class="gh-stat cite-stat" title="Citations on Google Scholar" target="_blank" rel="noopener" hidden>
+            <ion-icon name="school"></ion-icon>
+            <span data-citations="u6Y0pW4AAAAJ:d1gkVwhDpl0C">0</span>&nbsp;citations
+          </a>
+          <span class="gh-stat">
+            <ion-icon name="person-outline"></ion-icon>
+            First author
+          </span>
+          <span class="gh-stat">
+            <ion-icon name="calendar-outline"></ion-icon>
+            2024
+          </span>
+        </div>
+
+        <p class="project-description">
+          Public job traces are scarce and computing centers rarely release new ones, so synthetic traces matter for scheduling research. We compared five generative models (GAN, CTGAN, TVAE, Gaussian Copula, Copula GAN) against the manual statistical method that had been the default, judging them on distribution fit, statistical metrics, and how a scheduler behaves on the generated traces. Several of the learned generators produce usable traces with no manual tuning.
+        </p>
+        <p class="paper-role"><strong>My part:</strong> first author. I led the study end to end, from integrating the five generators to the scheduling simulations.</p>
+
+        <div class="project-tech">
+          <span class="tech-tag">GAN</span>
+          <span class="tech-tag">CTGAN</span>
+          <span class="tech-tag">TVAE</span>
+          <span class="tech-tag">Gaussian Copula</span>
+          <span class="tech-tag">Synthetic Data</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://drive.google.com/file/d/16DSXE8pSu0XJyWknAvgKtmo9lGymNOSr/view?usp=sharing" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="document-text-outline"></ion-icon>
+            Paper
+          </a>
+          <a href="https://doi.org/10.1007/978-3-031-74430-3_2" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="open-outline"></ion-icon>
+            DOI
+          </a>
+          <a href="https://github.com/DIR-LAB/Gen-Parallel-Workloads" class="project-btn" target="_blank" rel="noopener">
+            <ion-icon name="logo-github"></ion-icon>
+            Code
+          </a>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+          </section>
+        </article>
+
         <article class="projects" data-page="side projects">
           <header>
             <h2 class="h2 article-title">Side Projects</h2>
@@ -995,36 +1284,6 @@
           <a href="https://huggingface.co/Leonickson/Qwen3.6-35B-A3B-qpack" class="project-btn">
             <ion-icon name="open-outline"></ion-icon>
             Models
-          </a>
-        </div>
-      </div>
-    </li>
-
-    <li class="project-item active" data-filter-item data-category="Research &amp; AI">
-      <figure class="project-img">
-        <img src="./assets/images/afdp-paper-project.png" alt="AFDP: Loop Detection with Reflection Prompts for LLM Web Agents" loading="lazy" />
-      </figure>
-
-      <div class="project-content">
-        <h3 class="project-title">AFDP: LLM Web Agents</h3>
-        <p class="project-category">Research Paper · COMP 790, UNC Chapel Hill</p>
-
-        <p class="project-description">
-          Led a three-person research team building AFDP, a web-agent system pairing adaptive DOM pruning with reflection-based loop recovery. Our 168-task WebArena ablation found that loop recovery, not pruning, is what drives performance, lifting task success by 14.9 points.
-        </p>
-
-        <div class="project-tech">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Playwright</span>
-          <span class="tech-tag">Azure OpenAI</span>
-          <span class="tech-tag">Docker</span>
-          <span class="tech-tag">WebArena</span>
-        </div>
-
-        <div class="project-buttons">
-          <a href="./assets/papers/AFDP-COMP790-2026.pdf" class="project-btn" target="_blank">
-            <ion-icon name="document-text-outline"></ion-icon>
-            Read Paper
           </a>
         </div>
       </div>
