@@ -972,89 +972,6 @@ a.gh-stat:hover {
 }
 
 /* Research paper cards */
-.scholar-strip {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 18px 24px;
-  background: var(--eerie-black-1);
-  border: 1px solid var(--jet);
-  border-radius: 14px;
-  padding: 18px 24px;
-  margin-bottom: 12px;
-}
-
-.scholar-stats {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 14px 0;
-  flex: 1 1 auto;
-}
-
-.scholar-stat {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 0 28px;
-  border-left: 1px solid var(--jet);
-}
-
-.scholar-stat:first-child {
-  padding-left: 0;
-  border-left: 0;
-}
-
-.scholar-stat strong {
-  color: var(--orange-yellow-crayola);
-  font-size: 28px;
-  font-weight: var(--fw-600);
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-}
-
-.scholar-stat span {
-  color: var(--light-gray-70);
-  font-size: var(--fs-8);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-}
-
-.scholar-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: auto;
-  background: var(--border-gradient-onyx);
-  color: var(--light-gray);
-  padding: 12px 18px;
-  border-radius: 10px;
-  font-size: var(--fs-7);
-  font-weight: var(--fw-400);
-  white-space: nowrap;
-  transition: all 0.3s ease;
-}
-
-.scholar-link:hover {
-  color: var(--orange-yellow-crayola);
-  background: var(--bg-gradient-yellow-1);
-  transform: translateY(-2px);
-}
-
-.scholar-link ion-icon {
-  font-size: 18px;
-  color: var(--orange-yellow-crayola);
-}
-
-.scholar-note {
-  color: var(--light-gray-70);
-  font-size: var(--fs-8);
-  margin: 0 6px 30px;
-}
-
-.scholar-note time { display: inline; }
-
 .paper-item .project-img img {
   object-fit: contain;
   background: var(--white-1);
@@ -1124,27 +1041,6 @@ a.gh-stat:hover {
 
 .paper-item .project-description { margin-bottom: 14px; }
 
-.paper-role {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  line-height: 1.6;
-  margin-bottom: 20px;
-  padding-left: 12px;
-  border-left: 2px solid hsla(45, 100%, 72%, 0.5);
-}
-
-.paper-role strong {
-  color: var(--white-2);
-  font-weight: var(--fw-500);
-}
-
-@media (max-width: 580px) {
-  .scholar-strip { padding: 16px 18px; }
-  .scholar-stats { width: 100%; justify-content: space-between; }
-  .scholar-stat { padding: 0 14px; }
-  .scholar-stat:last-child { padding-right: 0; }
-  .scholar-link { width: 100%; justify-content: center; margin-left: 0; }
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

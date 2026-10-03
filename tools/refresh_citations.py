@@ -10,11 +10,9 @@ the numbers in index.html in place:
     python3 tools/refresh_citations.py --check  # only print what would change
 
 Each citation pill carries data-citations="<profile>:<paper id> ..." (one or
-more Scholar entry ids, summed). The strip at the top carries
-data-scholar="citations", "h-index", and "updated".
+more Scholar entry ids, summed).
 """
 
-import datetime
 import html
 import re
 import sys
@@ -37,16 +35,14 @@ def fetch_profile():
         count = re.search(r'class="gsc_a_ac gs_ibl"[^>]*>(\d*)</a>', row)
         if ident:
             per_paper[html.unescape(ident.group(1))] = int(count.group(1) or 0) if count else 0
-    totals = re.findall(r'class="gsc_rsb_std">(\d+)', page)
-    if not per_paper or len(totals) < 3:
+    if not per_paper:
         sys.exit("could not parse the Scholar page; it may be rate limiting, try again later")
-    # gsc_rsb_std order: citations (all, recent), h-index (all, recent), i10 (all, recent)
-    return per_paper, int(totals[0]), int(totals[2])
+    return per_paper
 
 
 def main():
     check = "--check" in sys.argv
-    per_paper, citations, h_index = fetch_profile()
+    per_paper = fetch_profile()
     src = open(INDEX, encoding="utf-8").read()
     out = src
     changes = []
@@ -69,10 +65,6 @@ def main():
             continue
         total = sum(per_paper[i] for i in ids)
         swap(r'data-citations="' + re.escape(m.group(1)) + r'">(\d+)<', total, ids[0])
-
-    swap(r'data-scholar="citations">(\d+)<', citations, "total citations")
-    swap(r'data-scholar="h-index">(\d+)<', h_index, "h-index")
-    swap(r'data-scholar="updated">([^<]+)<', datetime.date.today().strftime("%b %Y"), "updated")
 
     # a pill with zero citations stays hidden; show it once the paper is cited
     def toggle_hidden(m):
