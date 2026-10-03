@@ -917,24 +917,26 @@
 
           <section class="research-papers">
             <div class="scholar-strip">
-              <div class="scholar-stat">
-                <strong data-scholar="citations">27</strong>
-                <span>Citations</span>
-              </div>
-              <div class="scholar-stat">
-                <strong data-scholar="h-index">4</strong>
-                <span>h-index</span>
-              </div>
-              <div class="scholar-stat">
-                <strong>4</strong>
-                <span>Peer reviewed papers</span>
+              <div class="scholar-stats">
+                <div class="scholar-stat">
+                  <strong data-scholar="citations">27</strong>
+                  <span>Citations</span>
+                </div>
+                <div class="scholar-stat">
+                  <strong data-scholar="h-index">4</strong>
+                  <span>h-index</span>
+                </div>
+                <div class="scholar-stat">
+                  <strong>4</strong>
+                  <span>Peer reviewed</span>
+                </div>
               </div>
               <a href="https://scholar.google.com/citations?user=u6Y0pW4AAAAJ&amp;hl=en" class="scholar-link" target="_blank" rel="noopener">
                 <ion-icon name="school-outline"></ion-icon>
-                Google Scholar
+                Google Scholar profile
               </a>
-              <span class="scholar-note">Counts from Google Scholar, <span data-scholar="updated">Oct 2026</span></span>
             </div>
+            <div class="scholar-note">Citation counts from Google Scholar, updated <time data-scholar="updated">Oct 2026</time>.</div>
 
   <ul class="project-list paper-list">
     <li class="project-item paper-item active">
@@ -964,7 +966,6 @@
         <p class="project-description">
           Temporal action detection in long, untrimmed videos of daily living, where a 40 minute recording mixes short actions like drinking from a cup with long ones like using a laptop, and many of them overlap. MS-Temba extends Mamba with dilated temporal state space blocks that read the video at several time scales and a scale-aware fuser that merges them. It reaches state of the art on the ADL benchmarks with about 5x fewer parameters than transformer models.
         </p>
-        <p class="paper-role"><strong>My part:</strong> second author. I built the CLIP feature extraction pipeline (12,000+ videos, 16M+ frames) and tuned the baselines, lifting accuracy on Toyota Smarthome by 24%.</p>
 
         <div class="project-tech">
           <span class="tech-tag">Mamba</span>
@@ -1037,51 +1038,6 @@
 
     <li class="project-item paper-item active">
       <figure class="project-img">
-        <img src="./assets/images/paper-afdp.png" alt="AFDP system architecture: browser layer, pruning engine, LLM reasoning, loop detector, and adaptive feedback loop" loading="lazy" />
-      </figure>
-
-      <div class="project-content">
-        <p class="paper-venue">
-          <span class="venue-tag">COMP 790 · UNC Chapel Hill</span>
-          <span class="paper-kind">Course research paper, 2026</span>
-        </p>
-        <h3 class="project-title">Loop Detection with Reflection Prompts as the Primary Driver of Web Agent Performance: An Ablation Study on Adaptive Feedback-Driven DOM Pruning</h3>
-        <p class="paper-authors"><strong>Monish Soundar Raj</strong>, Jefrey Bergl, Rishabhdev Potti</p>
-
-        <div class="project-stats">
-          <span class="gh-stat">
-            <ion-icon name="people-outline"></ion-icon>
-            Led a team of three
-          </span>
-          <span class="gh-stat">
-            <ion-icon name="calendar-outline"></ion-icon>
-            2026
-          </span>
-        </div>
-
-        <p class="project-description">
-          LLM web agents choke on page observations of 10,000 to 100,000 tokens. AFDP pairs adaptive DOM pruning with a loop detector that injects a reflection prompt the moment the agent starts repeating itself. A four-condition ablation on 168 WebArena-Verified Hard tasks found that loop recovery, not pruning, drives the gains: 14.9 points more task success, while conservative pruning cut observation tokens by 52% with no change in success.
-        </p>
-
-        <div class="project-tech">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">Playwright</span>
-          <span class="tech-tag">Azure OpenAI</span>
-          <span class="tech-tag">Docker</span>
-          <span class="tech-tag">WebArena</span>
-        </div>
-
-        <div class="project-buttons">
-          <a href="./assets/papers/AFDP-COMP790-2026.pdf" class="project-btn" target="_blank">
-            <ion-icon name="document-text-outline"></ion-icon>
-            Read Paper
-          </a>
-        </div>
-      </div>
-    </li>
-
-    <li class="project-item paper-item active">
-      <figure class="project-img">
         <img src="./assets/images/paper-ipdps.png" alt="Job runtime, arrival interval, and resource allocation distributions across the Blue Waters, Mira, Theta, Philly, and Helios clusters" loading="lazy" />
       </figure>
 
@@ -1107,7 +1063,6 @@
         <p class="project-description">
           HPC clusters now run deep learning jobs next to classic simulations, and the old assumptions about their workloads no longer hold. We compared job traces across five systems, Mira and Theta (classic HPC), Philly and Helios (deep learning), and Blue Waters (hybrid), looking at job geometry, arrival patterns, resource allocation, and what each means for scheduling. Joint work with Microsoft and Argonne National Laboratory.
         </p>
-        <p class="paper-role"><strong>My part:</strong> second author. I analyzed the job traces across the clusters for the scheduling study.</p>
 
         <div class="project-tech">
           <span class="tech-tag">HPC</span>
@@ -1186,6 +1141,51 @@
           <a href="https://github.com/DIR-LAB/Gen-Parallel-Workloads" class="project-btn" target="_blank" rel="noopener">
             <ion-icon name="logo-github"></ion-icon>
             Code
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="project-item paper-item active">
+      <figure class="project-img">
+        <img src="./assets/images/paper-afdp.png" alt="AFDP system architecture: browser layer, pruning engine, LLM reasoning, loop detector, and adaptive feedback loop" loading="lazy" />
+      </figure>
+
+      <div class="project-content">
+        <p class="paper-venue">
+          <span class="venue-tag">COMP 790 · UNC Chapel Hill</span>
+          <span class="paper-kind">Course research paper, 2026</span>
+        </p>
+        <h3 class="project-title">Loop Detection with Reflection Prompts as the Primary Driver of Web Agent Performance: An Ablation Study on Adaptive Feedback-Driven DOM Pruning</h3>
+        <p class="paper-authors"><strong>Monish Soundar Raj</strong>, Jefrey Bergl, Rishabhdev Potti</p>
+
+        <div class="project-stats">
+          <span class="gh-stat">
+            <ion-icon name="people-outline"></ion-icon>
+            Led a team of three
+          </span>
+          <span class="gh-stat">
+            <ion-icon name="calendar-outline"></ion-icon>
+            2026
+          </span>
+        </div>
+
+        <p class="project-description">
+          LLM web agents choke on page observations of 10,000 to 100,000 tokens. AFDP pairs adaptive DOM pruning with a loop detector that injects a reflection prompt the moment the agent starts repeating itself. A four-condition ablation on 168 WebArena-Verified Hard tasks found that loop recovery, not pruning, drives the gains: 14.9 points more task success, while conservative pruning cut observation tokens by 52% with no change in success.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Playwright</span>
+          <span class="tech-tag">Azure OpenAI</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">WebArena</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="./assets/papers/AFDP-COMP790-2026.pdf" class="project-btn" target="_blank">
+            <ion-icon name="document-text-outline"></ion-icon>
+            Read Paper
           </a>
         </div>
       </div>
