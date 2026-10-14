@@ -945,6 +945,7 @@ Publications
 
 .project-stats {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
   margin: -6px 0 14px;

@@ -209,7 +209,10 @@
             <p>
               Outside the lab, I teach as a TA for <strong>DATA 120: Ethics of Data Science and AI</strong>, and I'm usually building something
               on the side. Lately that is <strong><a href="https://github.com/leonickson1/Swiftlet" class="a-link">Swiftlet</a></strong>, an open-source Swift and Metal
-              runtime that streams 35B and 80B mixture-of-experts models on ordinary Apple devices, including iPhones. What drives all of it
+              runtime that streams 35B and 80B mixture-of-experts models on ordinary Apple devices, including iPhones. I'm also building
+              <strong><a href="https://tomesphere.com/" class="a-link">Tomesphere</a></strong>, an open research-paper platform for people and AI agents
+              that has served over 100 million requests in its first three months, and <strong><a href="https://nibware.dev/" class="a-link">Nibware</a></strong>,
+              a library of compiled SwiftUI components that coding agents can build from over MCP. What drives all of it
               is simple: I like taking ideas out of papers and turning them into things people can actually use.
             </p>
           </section>
@@ -280,6 +283,9 @@
           <h3 class="h3 service-title">News</h3>
           <ul class="new-list" id="new-list">
             <li>
+              <p><b>[Oct. 2026]</b> <a class="a-link" href="https://tomesphere.com/">Tomesphere</a>, an open research-paper platform built for ChatGPT and AI agents across 8M+ papers, passed 100 million requests in about three months, with 28 million in the last 30 days.</p>
+            </li>
+            <li>
               <p><b>[2026]</b> Started working with <strong><a href="https://cs.unc.edu/person/leonard-mcmillan/" class="a-link">Dr. Leonard McMillan</a></strong> at UNC Chapel Hill, whose research spans computer vision, imaging, and computational genomics.</p>
             </li>
             <li>
@@ -302,7 +308,7 @@
               <p><b>[Jan. 2025]</b> 1 Paper - MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection is out,
                 <a class="a-link" href="https://arxiv.org/pdf/2501.06138">Check Here.</a></p>
             </li>
-            <li>
+            <li class="hidden">
               <p><b>[Dec. 2024]</b> 🎉 Excited to share that I made the Chancellor's List for Fall 2024!</p>
             </li>
             <li class="hidden">
@@ -1221,6 +1227,80 @@
             </div>
 
   <ul class="project-list">
+    <li class="project-item active" data-filter-item data-category="Research &amp; AI">
+      <figure class="project-img">
+        <img src="./assets/images/tomesphere-project.png" alt="Tomesphere" loading="lazy" />
+      </figure>
+
+      <div class="project-content">
+        <h3 class="project-title">Tomesphere</h3>
+        <p class="project-category">Open Research Paper Platform Built for ChatGPT and AI Agents</p>
+
+        <div class="project-stats">
+          <span class="gh-stat" title="Requests served in about three months">
+            <ion-icon name="pulse-outline"></ion-icon>
+            <span>100M+ requests</span>
+          </span>
+          <span class="gh-stat" title="Requests served in the last 30 days">
+            <ion-icon name="trending-up-outline"></ion-icon>
+            <span>28M in 30 days</span>
+          </span>
+          <span class="gh-stat" title="Papers indexed">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>8M+ papers</span>
+          </span>
+        </div>
+
+        <p class="project-description">
+          A free, open platform for searching and reading research papers, made for people and the AI agents they work with. It covers 8M+ papers from six sources, including arXiv, PubMed Central, bioRxiv, and medRxiv, with AI TLDRs, linked repos and models, figures, and a citation graph, all reachable from the site, a browser extension, or an MCP server. In about three months it has served over 100 million requests from readers, AI agents, and bots, 28 million in the last 30 days alone, and research companies pull data from it for their own work.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">MCP Server</span>
+          <span class="tech-tag">Semantic Search</span>
+          <span class="tech-tag">SPECTER2</span>
+          <span class="tech-tag">Citation Graph</span>
+          <span class="tech-tag">Browser Extension</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://tomesphere.com/" class="project-btn">
+            <ion-icon name="open-outline"></ion-icon>
+            Visit Site
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="project-item active" data-filter-item data-category="Apps &amp; Open Source">
+      <figure class="project-img">
+        <img src="./assets/images/nibware-project.png" alt="Nibware" loading="lazy" />
+      </figure>
+
+      <div class="project-content">
+        <h3 class="project-title">Nibware</h3>
+        <p class="project-category">Compiled SwiftUI Component Library with an MCP Server</p>
+
+        <p class="project-description">
+          Native iOS components inspired by apps that actually shipped. Every component is real, compiled SwiftUI, shown as a live iOS Simulator render right next to the exact source that produced it, so what you copy in is precisely what you see. Components are self-contained with no extra dependencies, and an MCP server lets coding agents build straight from the catalog.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">Swift</span>
+          <span class="tech-tag">SwiftUI</span>
+          <span class="tech-tag">iOS</span>
+          <span class="tech-tag">MCP Server</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://nibware.dev/" class="project-btn">
+            <ion-icon name="open-outline"></ion-icon>
+            Visit Site
+          </a>
+        </div>
+      </div>
+    </li>
+
     <li class="project-item active" data-filter-item data-category="Apps &amp; Open Source">
       <figure class="project-img">
         <img src="https://opengraph.githubassets.com/1/leonickson1/Swiftlet" onerror="this.onerror=null;this.src='./assets/images/swiftlet-project.png'" alt="Swiftlet" loading="lazy" />
