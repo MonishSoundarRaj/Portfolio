@@ -178,7 +178,7 @@
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Side Projects</button>
+              <button class="navbar-link" data-nav-link>Projects</button>
             </li>
 
             <li class="navbar-item">
@@ -289,7 +289,7 @@
               <p><b>[2026]</b> Started working with <strong><a href="https://cs.unc.edu/person/leonard-mcmillan/" class="a-link">Dr. Leonard McMillan</a></strong> at UNC Chapel Hill, whose research spans computer vision, imaging, and computational genomics.</p>
             </li>
             <li>
-              <p><b>[Aug. 2026]</b> Released <a class="a-link" href="https://github.com/leonickson1/Swiftlet">Swiftlet</a>, an open-source Swift and Metal runtime that streams 35B and 80B Qwen MoE models on Apple devices, including iPhone. Now past 650 stars on GitHub.</p>
+              <p><b>[Aug. 2026]</b> Released <a class="a-link" href="https://github.com/leonickson1/Swiftlet">Swiftlet</a>, an open-source Swift and Metal runtime that streams 35B and 80B Qwen MoE models on Apple devices, including iPhone. Now past 650 stars on GitHub, and it hit #1 on <a class="a-link" href="https://news.ycombinator.com/item?id=49158333">Hacker News</a> with 312 points and 143 comments.</p>
             </li>
             <li>
               <p><b>[Feb. 2026]</b> 1 Paper - MS-Temba: Multi-Scale Temporal Mamba for Efficient Temporal Action Detection accepted to CVPR 2026,
@@ -1178,9 +1178,9 @@
           </section>
         </article>
 
-        <article class="projects" data-page="side projects">
+        <article class="projects" data-page="projects">
           <header>
-            <h2 class="h2 article-title">Side Projects</h2>
+            <h2 class="h2 article-title">Projects</h2>
           </header>
 
           <section class="projects">
@@ -1226,40 +1226,148 @@
               </ul>
             </div>
 
-  <ul class="project-list">
-    <li class="project-item active" data-filter-item data-category="Research &amp; AI">
-      <figure class="project-img">
-        <img src="./assets/images/tomesphere-project.png" alt="Tomesphere" loading="lazy" />
+  <ul class="project-list showcase">
+    <li class="project-item featured active" data-filter-item data-category="Research &amp; AI">
+      <figure class="project-img featured-img">
+        <img src="./assets/images/tomesphere-project.png" alt="Tomesphere home page: Built for ChatGPT across 8M papers" />
       </figure>
 
       <div class="project-content">
-        <h3 class="project-title">Tomesphere</h3>
-        <p class="project-category">Open Research Paper Platform Built for ChatGPT and AI Agents</p>
+        <div class="featured-head">
+          <div>
+            <h3 class="project-title">Tomesphere</h3>
+            <p class="project-category">Open Research Paper Platform Built for ChatGPT and AI Agents</p>
+          </div>
+          <a href="https://news.ycombinator.com/item?id=48840207" class="hn-chip" target="_blank" rel="noopener">
+            <span class="hn-logo" aria-hidden="true">Y</span>
+            85 points on Hacker News
+          </a>
+        </div>
 
-        <div class="project-stats">
-          <span class="gh-stat" title="Requests served in about three months">
-            <ion-icon name="pulse-outline"></ion-icon>
-            <span>100M+ requests</span>
-          </span>
-          <span class="gh-stat" title="Requests served in the last 30 days">
-            <ion-icon name="trending-up-outline"></ion-icon>
-            <span>28M in 30 days</span>
-          </span>
-          <span class="gh-stat" title="Papers indexed">
-            <ion-icon name="document-text-outline"></ion-icon>
-            <span>8M+ papers</span>
-          </span>
+        <div class="kpi-row">
+          <div class="kpi">
+            <span class="kpi-value">100M+</span>
+            <span class="kpi-label">Requests served in about three months</span>
+          </div>
+          <div class="kpi">
+            <span class="kpi-value">28M</span>
+            <span class="kpi-label">Requests in the last 30 days</span>
+          </div>
+          <div class="kpi">
+            <span class="kpi-value">8M+</span>
+            <span class="kpi-label">Papers from six sources</span>
+          </div>
         </div>
 
         <p class="project-description">
-          A free, open platform for searching and reading research papers, made for people and the AI agents they work with. It covers 8M+ papers from six sources, including arXiv, PubMed Central, bioRxiv, and medRxiv, with AI TLDRs, linked repos and models, figures, and a citation graph, all reachable from the site, a browser extension, or an MCP server. In about three months it has served over 100 million requests from readers, AI agents, and bots, 28 million in the last 30 days alone, and research companies pull data from it for their own work.
+          A free, open research layer that anyone can use, built for ChatGPT and the AI agents people work with. Plain-English TLDRs let you decide in 10 seconds instead of 10 minutes whether a paper matters, and every paper links out to its code, models, data, peer reviews, talks, and the genes, proteins, trials, and structures it mentions. It is reachable from the site, a browser extension, or an MCP server. Traffic from readers, AI agents, and bots has passed 100 million requests, and research companies pull data from it for their own work.
         </p>
+
+        <div class="feature-panels">
+          <section class="feature-panel">
+            <h4 class="feature-title">Every paper. Six sources.</h4>
+            <p class="feature-note">One queryable layer for your agent, refreshed continuously.</p>
+            <ul class="source-bars">
+              <li title="PubMed Central: about 5M papers">
+                <span class="source-name">PMC</span>
+                <span class="source-track"><span class="source-fill" style="width: 100%"></span></span>
+                <span class="source-value">5M</span>
+              </li>
+              <li title="arXiv: about 3M papers">
+                <span class="source-name">arXiv</span>
+                <span class="source-track"><span class="source-fill" style="width: 60%"></span></span>
+                <span class="source-value">3M</span>
+              </li>
+              <li title="bioRxiv: about 333K papers">
+                <span class="source-name">bioRxiv</span>
+                <span class="source-track"><span class="source-fill" style="width: 6.66%"></span></span>
+                <span class="source-value">333K</span>
+              </li>
+              <li title="medRxiv: about 84K papers">
+                <span class="source-name">medRxiv</span>
+                <span class="source-track"><span class="source-fill" style="width: 1.68%"></span></span>
+                <span class="source-value">84K</span>
+              </li>
+              <li title="eLife: about 20K papers">
+                <span class="source-name">eLife</span>
+                <span class="source-track"><span class="source-fill" style="width: 0.4%"></span></span>
+                <span class="source-value">20K</span>
+              </li>
+              <li title="F1000: about 10K papers">
+                <span class="source-name">F1000</span>
+                <span class="source-track"><span class="source-fill" style="width: 0.2%"></span></span>
+                <span class="source-value">10K</span>
+              </li>
+            </ul>
+
+            <div class="feature-aside">
+              <ion-icon name="flash-outline"></ion-icon>
+              <p>
+                <strong>Decide in 10 seconds, not 10 minutes.</strong>
+                Plain-English TLDRs, with millions already generated across the corpus and more every day.
+              </p>
+            </div>
+          </section>
+
+          <section class="feature-panel">
+            <h4 class="feature-title">Linked to everything a paper touches</h4>
+            <p class="feature-note">From paper to artifact, trust signal, walkthrough, and molecule.</p>
+            <ul class="linked-grid">
+              <li>
+                <span class="linked-value">207K</span>
+                <span class="linked-label">Repos, models, and datasets</span>
+                <span class="linked-src">GitHub · Hugging Face · Zenodo · COD · PDB</span>
+              </li>
+              <li>
+                <span class="linked-value">402K</span>
+                <span class="linked-label">Trust signals</span>
+                <span class="linked-src">OpenReview · retractions · FWCI</span>
+              </li>
+              <li>
+                <span class="linked-value">68K</span>
+                <span class="linked-label">Video walkthroughs</span>
+                <span class="linked-src">Talks · Yannic Kilcher · Two Minute Papers</span>
+              </li>
+              <li>
+                <span class="linked-value">146M</span>
+                <span class="linked-label">Entity links</span>
+                <span class="linked-src">Genes · drugs · diseases · trials</span>
+              </li>
+              <li>
+                <span class="linked-value">1.58M</span>
+                <span class="linked-label">Papers linked to genes</span>
+                <span class="linked-src">gene2pubmed · NCBI</span>
+              </li>
+              <li>
+                <span class="linked-value">477K</span>
+                <span class="linked-label">UniProt proteins</span>
+                <span class="linked-src">UniProt · Swiss-Prot</span>
+              </li>
+              <li>
+                <span class="linked-value">132K</span>
+                <span class="linked-label">Papers linked to clinical trials</span>
+                <span class="linked-src">ClinicalTrials.gov · all phases</span>
+              </li>
+              <li>
+                <span class="linked-value">109K</span>
+                <span class="linked-label">Papers linked to 3D structures</span>
+                <span class="linked-src">RCSB PDB · crystallography</span>
+              </li>
+              <li>
+                <span class="linked-value">25K</span>
+                <span class="linked-label">Topic clusters in the Atlas</span>
+                <span class="linked-src">UMAP + HDBSCAN over 8.24M papers</span>
+              </li>
+            </ul>
+          </section>
+        </div>
 
         <div class="project-tech">
           <span class="tech-tag">MCP Server</span>
           <span class="tech-tag">Semantic Search</span>
           <span class="tech-tag">SPECTER2</span>
           <span class="tech-tag">Citation Graph</span>
+          <span class="tech-tag">UMAP + HDBSCAN</span>
           <span class="tech-tag">Browser Extension</span>
         </div>
 
@@ -1268,58 +1376,59 @@
             <ion-icon name="open-outline"></ion-icon>
             Visit Site
           </a>
+          <a href="https://news.ycombinator.com/item?id=48840207" class="project-btn">
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+            HN Discussion
+          </a>
         </div>
       </div>
     </li>
 
-    <li class="project-item active" data-filter-item data-category="Apps &amp; Open Source">
-      <figure class="project-img">
-        <img src="./assets/images/nibware-project.png" alt="Nibware" loading="lazy" />
+    <li class="project-item featured active" data-filter-item data-category="Apps &amp; Open Source">
+      <figure class="project-img featured-img">
+        <img src="https://opengraph.githubassets.com/1/leonickson1/Swiftlet" onerror="this.onerror=null;this.src='./assets/images/swiftlet-project.png'" alt="Swiftlet on GitHub" />
       </figure>
 
       <div class="project-content">
-        <h3 class="project-title">Nibware</h3>
-        <p class="project-category">Compiled SwiftUI Component Library with an MCP Server</p>
+        <div class="featured-head">
+          <div>
+            <h3 class="project-title">Swiftlet</h3>
+            <p class="project-category">Swift + Metal Runtime for Streaming MoE Models on Apple Devices</p>
+          </div>
+          <a href="https://news.ycombinator.com/item?id=49158333" class="hn-chip" target="_blank" rel="noopener">
+            <span class="hn-logo" aria-hidden="true">Y</span>
+            #1 on Hacker News
+          </a>
+        </div>
 
-        <p class="project-description">
-          Native iOS components inspired by apps that actually shipped. Every component is real, compiled SwiftUI, shown as a live iOS Simulator render right next to the exact source that produced it, so what you copy in is precisely what you see. Components are self-contained with no extra dependencies, and an MCP server lets coding agents build straight from the catalog.
+        <div class="kpi-row" data-github-repo="leonickson1/Swiftlet">
+          <a href="https://news.ycombinator.com/item?id=49158333" class="kpi" target="_blank" rel="noopener">
+            <span class="kpi-value">312</span>
+            <span class="kpi-label">Points on Hacker News</span>
+          </a>
+          <a href="https://news.ycombinator.com/item?id=49158333" class="kpi" target="_blank" rel="noopener">
+            <span class="kpi-value">143</span>
+            <span class="kpi-label">Comments on Hacker News</span>
+          </a>
+          <a href="https://github.com/leonickson1/Swiftlet/stargazers" class="kpi">
+            <span class="kpi-value" data-gh-stars>650</span>
+            <span class="kpi-label">GitHub stars</span>
+          </a>
+          <a href="https://github.com/leonickson1/Swiftlet/forks" class="kpi">
+            <span class="kpi-value" data-gh-forks>37</span>
+            <span class="kpi-label">Forks</span>
+          </a>
+        </div>
+
+        <p class="callout">
+          <ion-icon name="trophy-outline"></ion-icon>
+          <span>
+            <strong>Top 1% territory.</strong> Across 188,085 Show HN posts from 2012 to 2026, the median post scored 2 points
+            and only 1% ever cleared 263
+            (<a href="https://danfking.github.io/blog/2026/04/23/show-hn-by-the-numbers/" class="a-link" target="_blank" rel="noopener">Show HN by the Numbers</a>).
+            Swiftlet reached 312 points and the #1 spot on the front page.
+          </span>
         </p>
-
-        <div class="project-tech">
-          <span class="tech-tag">Swift</span>
-          <span class="tech-tag">SwiftUI</span>
-          <span class="tech-tag">iOS</span>
-          <span class="tech-tag">MCP Server</span>
-        </div>
-
-        <div class="project-buttons">
-          <a href="https://nibware.dev/" class="project-btn">
-            <ion-icon name="open-outline"></ion-icon>
-            Visit Site
-          </a>
-        </div>
-      </div>
-    </li>
-
-    <li class="project-item active" data-filter-item data-category="Apps &amp; Open Source">
-      <figure class="project-img">
-        <img src="https://opengraph.githubassets.com/1/leonickson1/Swiftlet" onerror="this.onerror=null;this.src='./assets/images/swiftlet-project.png'" alt="Swiftlet" loading="lazy" />
-      </figure>
-
-      <div class="project-content">
-        <h3 class="project-title">Swiftlet</h3>
-        <p class="project-category">Swift + Metal Runtime for Streaming MoE Models on Apple Devices</p>
-
-        <div class="project-stats" data-github-repo="leonickson1/Swiftlet">
-          <a href="https://github.com/leonickson1/Swiftlet/stargazers" class="gh-stat" title="GitHub stars">
-            <ion-icon name="star"></ion-icon>
-            <span data-gh-stars>650</span>
-          </a>
-          <a href="https://github.com/leonickson1/Swiftlet/forks" class="gh-stat" title="GitHub forks">
-            <ion-icon name="git-network-outline"></ion-icon>
-            <span data-gh-forks>37</span>
-          </a>
-        </div>
 
         <p class="project-description">
           Runs 35B and 80B Qwen mixture-of-experts models on ordinary Apple hardware, including iPhones, by keeping only the dense core resident and streaming expert weights from the SSD on demand. The 4-bit 35B runs in about 2.6 GB of RAM and the 80B in about 4.3 GB. Ships as a Swift package, a CLI, and an OpenAI-compatible local server, with every kernel validated against mlx-lm references.
@@ -1341,6 +1450,46 @@
           <a href="https://huggingface.co/Leonickson/Qwen3.6-35B-A3B-qpack" class="project-btn">
             <ion-icon name="open-outline"></ion-icon>
             Models
+          </a>
+          <a href="https://news.ycombinator.com/item?id=49158333" class="project-btn">
+            <ion-icon name="chatbubbles-outline"></ion-icon>
+            HN Discussion
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="project-item active" data-filter-item data-category="Apps &amp; Open Source">
+      <figure class="project-img">
+        <img src="./assets/images/nibware-project.png" alt="Nibware home page: Native iOS components, inspired by apps that shipped" loading="lazy" />
+      </figure>
+
+      <div class="project-content">
+        <h3 class="project-title">Nibware</h3>
+        <p class="project-category">Compiled SwiftUI Component Library with an MCP Server</p>
+
+        <div class="project-stats">
+          <a href="https://news.ycombinator.com/item?id=49070881" class="gh-stat" title="Hacker News discussion" target="_blank" rel="noopener">
+            <span class="hn-logo hn-logo-sm" aria-hidden="true">Y</span>
+            <span>10 points on Hacker News</span>
+          </a>
+        </div>
+
+        <p class="project-description">
+          Native iOS components inspired by apps that actually shipped. Every component is real, compiled SwiftUI, shown as a live iOS Simulator render right next to the exact source that produced it, so what you copy in is precisely what you see. Components are self-contained with no extra dependencies, and an MCP server lets coding agents build straight from the catalog.
+        </p>
+
+        <div class="project-tech">
+          <span class="tech-tag">Swift</span>
+          <span class="tech-tag">SwiftUI</span>
+          <span class="tech-tag">iOS</span>
+          <span class="tech-tag">MCP Server</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://nibware.dev/" class="project-btn">
+            <ion-icon name="open-outline"></ion-icon>
+            Visit Site
           </a>
         </div>
       </div>
@@ -1482,7 +1631,7 @@
 
     <li class="project-item active" data-filter-item data-category="Research &amp; AI">
       <figure class="project-img">
-        <img src="./assets/images/gendm_thumbnail.png" alt="GenDM" loading="lazy" />
+        <img src="./assets/images/gendm_thumbnail.png" alt="GenDM" loading="lazy" style="object-position: left center" />
       </figure>
     
       <div class="project-content">
@@ -1518,7 +1667,7 @@
 
     <li class="project-item active" data-filter-item data-category="Research &amp; AI">
       <figure class="project-img">
-        <img src="./assets/images/diffusecampus_thumbnail.png" alt="DiffuseCampus" loading="lazy" />
+        <img src="./assets/images/diffusecampus_thumbnail.png" alt="DiffuseCampus" loading="lazy" style="object-position: center 70%" />
       </figure>
     
       <div class="project-content">

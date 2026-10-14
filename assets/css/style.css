@@ -2589,3 +2589,306 @@ margin-top: 80px;
   align-items: center;
   width: 100%;
 }
+
+/*-----------------------------------*\
+  #PROJECTS SHOWCASE
+\*-----------------------------------*/
+
+/* Bigger 16:10 images so screenshots stay readable instead of shrinking into a thin strip */
+.showcase .project-img {
+  height: auto;
+  padding: 10px 10px 0;
+}
+
+.showcase .project-img img {
+  display: block;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
+}
+
+.showcase .project-item:hover .project-img img { transform: none; }
+
+.showcase .gh-stat { white-space: nowrap; }
+
+/* Featured cards span the full row */
+.showcase .project-item.featured {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.showcase .featured-img img { aspect-ratio: 2 / 1; }
+
+.showcase .featured .project-content { padding: 22px 24px 24px; }
+
+.featured-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px 16px;
+}
+
+.featured-head .project-title { font-size: var(--fs-1); }
+
+/* Hacker News chip */
+.hn-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px 5px 5px;
+  border-radius: 999px;
+  background: hsla(24, 100%, 50%, 0.1);
+  border: 1px solid hsla(24, 100%, 50%, 0.45);
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.hn-chip:hover { background: hsla(24, 100%, 50%, 0.2); }
+
+.hn-logo {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ff6600;
+  color: #fff;
+  font-size: 12px;
+  font-weight: var(--fw-600);
+  line-height: 1;
+}
+
+.hn-logo-sm {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  font-size: 10px;
+}
+
+/* Stat tiles */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+  margin: 4px 0 18px;
+}
+
+.kpi {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  background: var(--onyx);
+  border: 1px solid var(--jet);
+  border-radius: 12px;
+  transition: border-color 0.3s ease;
+}
+
+a.kpi:hover { border-color: var(--orange-yellow-crayola); }
+
+.kpi-value {
+  color: var(--white-2);
+  font-size: 26px;
+  font-weight: var(--fw-600);
+  line-height: 1.1;
+}
+
+.kpi-label {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  line-height: 1.4;
+}
+
+/* Context callout */
+.callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  background: hsla(45, 100%, 72%, 0.06);
+  border: 1px solid hsla(45, 100%, 72%, 0.25);
+  border-radius: 12px;
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  line-height: 1.6;
+}
+
+.callout ion-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--orange-yellow-crayola);
+  font-size: 18px;
+}
+
+.callout strong {
+  color: var(--white-2);
+  font-weight: var(--fw-500);
+}
+
+/* Tomesphere detail panels */
+.feature-panels {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.feature-panel {
+  padding: 16px;
+  background: var(--eerie-black-1);
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+}
+
+.feature-title {
+  margin-bottom: 4px;
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+}
+
+.feature-note {
+  margin-bottom: 14px;
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  line-height: 1.5;
+}
+
+.source-bars {
+  display: grid;
+  gap: 11px;
+}
+
+.source-bars li {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) 40px;
+  align-items: center;
+  gap: 10px;
+}
+
+.source-name {
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+}
+
+.source-track {
+  height: 8px;
+  background: var(--onyx);
+  border-radius: 4px;
+}
+
+.source-fill {
+  display: block;
+  height: 100%;
+  min-width: 3px;
+  background: var(--orange-yellow-crayola);
+  border-radius: 0 4px 4px 0;
+}
+
+.source-value {
+  color: var(--white-2);
+  font-size: var(--fs-8);
+  text-align: right;
+}
+
+.linked-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.linked-grid li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  background: var(--onyx);
+  border-radius: 10px;
+}
+
+.linked-value {
+  color: var(--white-2);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  line-height: 1.2;
+}
+
+.linked-label {
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  line-height: 1.4;
+}
+
+.linked-src {
+  color: var(--light-gray-70);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.showcase .featured .project-buttons { flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .feature-panels { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 580px) {
+  .showcase .featured .project-content { padding: 16px; }
+  .featured-head .project-title { font-size: var(--fs-2); }
+  .kpi-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kpi-value { font-size: 22px; }
+  .linked-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.feature-panels > .feature-panel:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-aside {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--jet);
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  line-height: 1.5;
+}
+
+.feature-panel .source-bars { margin-bottom: 18px; }
+
+.feature-aside ion-icon {
+  flex-shrink: 0;
+  color: var(--orange-yellow-crayola);
+  font-size: 16px;
+}
+
+.feature-aside strong {
+  display: block;
+  color: var(--white-2);
+  font-weight: var(--fw-500);
+}
+
+/* Equal-height cards per row, buttons pinned to the bottom */
+.showcase .project-item { height: auto; }
+
+.showcase .project-item.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-head { margin-bottom: 14px; }
+
+.featured-head .project-category { margin-bottom: 0; }
+
+@media (max-width: 580px) {
+  .kpi-row > :last-child:nth-child(odd),
+  .linked-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
