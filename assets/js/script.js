@@ -127,16 +127,18 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
+    // Match pages and links by name so the nav order can differ from the page order
+    const target = this.innerHTML.toLowerCase();
+
     for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+      pages[i].classList.toggle("active", pages[i].dataset.page === target);
     }
+
+    for (let i = 0; i < navigationLinks.length; i++) {
+      navigationLinks[i].classList.toggle("active", navigationLinks[i] === this);
+    }
+
+    window.scrollTo(0, 0);
 
   });
 }
